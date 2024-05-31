@@ -8,8 +8,13 @@ const stopSequences = superb.random().split(" ");
 // https://ai.google.dev/docs/concepts#model_parameters
 export const modelConfig = {
     generationConfig: {
+        temperature: 1,
+        topP: 0.95,
+        topK: 64,
+        maxOutputTokens: 8192,
+        responseMimeType: "text/plain",
         stopSequences,
-        maxOutputTokens: 5000,
+        maxOutputTokens: 1048576,
     },
     safetySettings: [
         {
