@@ -14,7 +14,7 @@ export const modelConfig = {
         maxOutputTokens: 8192,
         responseMimeType: "text/plain",
         stopSequences,
-        maxOutputTokens: 1048576,
+        maxOutputTokens: 1048576
     },
     safetySettings: [
         {
